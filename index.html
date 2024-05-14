@@ -3,52 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photographie de Voyage</title>
+    <title>Explorateur de Mondes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Photographie de Voyage</h1>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#galerie">Galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Explorateur de Mondes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="accueil">
-        <h2>Bienvenue sur notre site de photographie de voyage!</h2>
-        <p>Découvrez des clichés époustouflants capturés aux quatre coins du monde.</p>
-    </section>
-
-    <section id="galerie">
-        <h2>Galerie</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="Photo 1">
-            <img src="image2.jpg" alt="Photo 2">
-            <img src="image3.jpg" alt="Photo 3">
-            <!-- Ajoutez d'autres images ici -->
+    <section id="accueil" class="accueil">
+        <div class="overlay">
+            <div class="container">
+                <h2>Explorez. Découvrez. Rêvez.</h2>
+                <p>Plongez dans une aventure visuelle à travers les continents. Laissez-vous inspirer par la beauté du monde.</p>
+                <a href="#destinations" class="btn">Découvrez nos destinations</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="envoyer_message.php" method="post">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Nos Destinations</h2>
+            <div class="gallery">
+                <div class="destination">
+                    <img src="destination1.jpg" alt="Destination 1">
+                    <h3>Îles Fidji</h3>
+                    <p>Plages de sable blanc, eaux cristallines et culture polynésienne.</p>
+                </div>
+                <div class="destination">
+                    <img src="destination2.jpg" alt="Destination 2">
+                    <h3>Machu Picchu, Pérou</h3>
+                    <p>Site archéologique inca perché dans les montagnes des Andes.</p>
+                </div>
+                <div class="destination">
+                    <img src="destination3.jpg" alt="Destination 3">
+                    <h3>Safari au Kenya</h3>
+                    <p>Rencontrez les majestueux animaux sauvages dans leur habitat naturel.</p>
+                </div>
+                <!-- Ajoutez d'autres destinations ici -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form action="envoyer_message.php" method="post">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Photographie de Voyage. Tous droits réservés.</p>
+        <p>&copy; 2024 Explorateur de Mondes. Tous droits réservés.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
