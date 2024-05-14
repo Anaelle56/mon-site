@@ -40,12 +40,23 @@
             padding: 20px;
             text-align: center;
         }
+        .trip {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .trip img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Mon Blog de Voyage</h1>
-        <p>Bienvenue sur mon blog où je partage mes aventures autour du monde.</p>
+        <p>Bienvenue sur le blog de voyage d'Anaëlle Roussel.</p>
     </header>
     <nav>
         <a href="#">Accueil</a>
@@ -55,17 +66,35 @@
         <a href="#">Contact</a>
     </nav>
     <section>
-        <h2>Derniers Articles</h2>
-        <article>
-            <h3>Titre de l'article 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum est eu sapien luctus, sed varius orci vestibulum.</p>
-            <a href="#">Lire la suite...</a>
-        </article>
-        <article>
-            <h3>Titre de l'article 2</h3>
-            <p>Donec vitae augue sit amet lacus dapibus efficitur a id metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            <a href="#">Lire la suite...</a>
-        </article>
+        <h2>À Propos de Moi</h2>
+        <div class="about">
+            <p>Bonjour, je suis Anaëlle Roussel, passionnée de voyage et d'aventure. Sur ce blog, je partage mes expériences et découvertes à travers le monde.</p>
+        </div>
+        <h2>Dernier Périple : Tours</h2>
+        <div class="trip">
+            <img src="tours.jpg" alt="Tours">
+            <p>Je viens de revenir d'un merveilleux voyage à Tours. Découvrez mes récits et photos de cette belle ville française.</p>
+        </div>
+        <h2>Voyages Réalisés</h2>
+        <div class="trip">
+            <img src="paris.jpg" alt="Paris">
+            <p>Paris</p>
+        </div>
+        <div class="trip">
+            <img src="rome.jpg" alt="Rome">
+            <p>Rome</p>
+        </div>
+        <!-- Ajoutez d'autres voyages réalisés ici -->
+        <h2>Voyages à Venir</h2>
+        <div class="trip">
+            <img src="tokyo.jpg" alt="Tokyo">
+            <p>Tokyo (prochainement)</p>
+        </div>
+        <div class="trip">
+            <img src="bali.jpg" alt="Bali">
+            <p>Bali (prochainement)</p>
+        </div>
+        <!-- Ajoutez d'autres voyages à venir ici -->
     </section>
     <footer>
         <p>&copy; 2024 Mon Blog de Voyage. Tous droits réservés.</p>
