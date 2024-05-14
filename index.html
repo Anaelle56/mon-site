@@ -1,1 +1,54 @@
-coucou
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographie de Voyage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photographie de Voyage</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Bienvenue sur notre site de photographie de voyage!</h2>
+        <p>Découvrez des clichés époustouflants capturés aux quatre coins du monde.</p>
+    </section>
+
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Photo 1">
+            <img src="image2.jpg" alt="Photo 2">
+            <img src="image3.jpg" alt="Photo 3">
+            <!-- Ajoutez d'autres images ici -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="envoyer_message.php" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Photographie de Voyage. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
