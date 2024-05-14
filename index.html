@@ -6,22 +6,23 @@
     <title>Mon Blog de Voyage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
         }
         header {
-            background-color: #2ecc71;
+            background-color: #3498db;
             color: #fff;
             padding: 40px 20px;
             text-align: center;
         }
         h1, h2, h3 {
             margin: 0;
+            font-family: 'Pacifico', cursive;
         }
         nav {
-            background-color: #27ae60;
+            background-color: #2980b9;
             color: #fff;
             padding: 10px 0;
             text-align: center;
@@ -37,17 +38,16 @@
         }
         section {
             padding: 40px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
         }
         .about {
-            flex: 1 1 100%;
             text-align: center;
             margin-bottom: 40px;
         }
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
         .trip {
-            flex: 1 1 30%;
             margin-bottom: 40px;
             padding: 20px;
             background-color: #fff;
@@ -58,6 +58,7 @@
         .trip img {
             width: 80px;
             height: 80px;
+            border-radius: 50%;
             margin-bottom: 20px;
         }
         footer {
@@ -65,7 +66,6 @@
             color: #fff;
             padding: 20px;
             text-align: center;
-            margin-top: 40px;
         }
     </style>
 </head>
@@ -81,30 +81,33 @@
         <a href="#">À Propos</a>
         <a href="#">Contact</a>
     </nav>
-    <section>
+    <section style="background-color: #ecf0f1;">
         <div class="about">
             <h2>À Propos de Moi</h2>
-            <p>Bonjour, je suis Anaëlle Roussel, passionnée de voyage et d'aventure. Sur ce blog, je partage mes expériences et découvertes à travers le monde.</p>
+            <p>Bonjour ! Je m'appelle Anaëlle Roussel et je suis passionnée par les voyages. Ce blog est un espace où je partage mes aventures et découvertes à travers le monde. De Paris à Tokyo, en passant par Rome et bien d'autres destinations, suivez-moi dans mes escapades et inspirez-vous pour vos prochains voyages !</p>
         </div>
+    </section>
+    <section style="background-color: #f39c12;">
         <div class="trip">
             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17.66 10.93L12 5.27 6.34 10.93l1.41 1.41L12 8.11l4.24 4.24z'/%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3C/svg%3E" alt="Tours">
             <h2>Voyage Surprise</h2>
             <p>Découvrez où je suis partie cette fois-ci !</p>
         </div>
+    </section>
+    <section style="background-color: #16a085;">
         <div class="trip">
             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17.66 10.93L12 5.27 6.34 10.93l1.41 1.41L12 8.11l4.24 4.24z'/%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3C/svg%3E" alt="Paris">
             <h2>Ville Lumière</h2>
             <p>Je suis tombée amoureuse de Paris.</p>
         </div>
+    </section>
+    <section style="background-color: #e74c3c;">
         <div class="trip">
             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17.66 10.93L12 5.27 6.34 10.93l1.41 1.41L12 8.11l4.24 4.24z'/%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3C/svg%3E" alt="Rome">
             <h2>Vieille Ville</h2>
             <p>Rome, où le passé et le présent se rencontrent.</p>
         </div>
+    </section>
+    <section style="background-color: #8e44ad;">
         <div class="trip">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17.66 10.93L12 5.27 6.34 10.93l1.41 1.41L12 8.11l4.24 4.24z'/%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3C/svg%3E" alt="Tokyo">
-            <h2>Avenir Incertain</h2>
-            <p>Où serai-je demain ? Mystère...</p>
-        </div>
-        <div class="trip">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17.66 10.93L12 5.27 6.34 10.93l1.41 1.41L12 8.11l4.24 4.24z'/%3E%3Cpath fill='none' d='M0 0
